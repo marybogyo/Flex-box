@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    border: 1px solid gray;
+    padding: 10px;
+    margin: 5px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: stretch;
+}
+header{
+    border: 1px solid gray;
+    padding: 10px;
+    width: 100%;
+    color: gray;
+    margin-bottom: 5px;
+
+}article h2{
+    color: white;
+    background-color: red;
+    padding-left: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.red{
+    background-color: red;
+    padding: 10px;
+}
+.red a{
+    color: white;
+    text-decoration: none;
+}
+.menu li{
+    border-left: 1px solid gray;
+}
+.menu a{
+    display: flex;
+    color: red;
+    text-decoration: none;
+    padding: 10px;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+nav{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    border: 1px solid gray;
+    background-color: rgb(155, 151, 151);
+    margin-bottom: 5px;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style-type: none;
+   
+}
+article{
+    display: flex;  
+    flex-wrap: wrap;
+    gap: 8px; 
+    padding: 10px;
+    border: 1px solid gray;
+    margin-bottom: 5px;
+    justify-content: center;
+}
+article div{
+    flex: 0 0 calc(25% - 8px);
+    align-content: stretch;
+    background-color: rgb(155, 151, 151);
+}
+
+article p{
+    color: beige;
+    padding: 10px;
+    margin-top: 10px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    border: 1px solid gray;
+    padding: 10px;
+}
+footer ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    border: 1px solid gray;
+    padding: 10px;
+}
+footer ul li{
+    list-style-type: none;
+    width: 70px;
+    margin-right: 5px;
+}
+footer a{
+    text-decoration: none;
+    color: red;
+}
+@media all and (max-width:500px) {
+    article{
+        flex-flow: column wrap;
+    }
+    
+}
